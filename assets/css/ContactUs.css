@@ -1,83 +1,128 @@
 .footer-widget-pb-100 {
     background-color: rgb(0, 59, 117);
+    padding: 40px 0;
 }
+
 .col-lg-3-col-md-5-col-sm-5 {
     background-color: rgb(0, 59, 117);
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
+
 .contact-custom-margin-big {
     background-color: rgb(0, 59, 117);
     width: 300px;
-    margin: 20% 0 0 -7%;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .contact {
-    width:1200px;
-    height: auto;
+    max-width: 1200px;
+    width: 90%;
     background-color: rgb(255, 255, 255);
-    align-self: center;
-    margin: 13% 0 0 10%;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .contact .informations {
     background-color: rgb(250, 250, 250);
-    box-shadow: 5px 5px 10px grey;
-    height: 450px;
-    width: 1000px;
-    margin: 5%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .informations .findus {
-    height: 500px;
-    width:350px;
     background-color: rgb(18, 18, 95);
-    margin: -2.5% 0 0 5%;
-    box-shadow: 5px 5px 10px grey;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .findus p, .findus h3 {
     color: white;
-    margin:  0 0 10%;
-}
-.form h3 {
+    margin-bottom: 15px;
     text-align: center;
-    margin: 5%;
 }
+
 .informations form {
+    flex: 1;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    margin: 5% 0 0 10%;
+    margin: 10px;
 }
-.informations form input {
-    width: 500px;
-    height: 40px;
-    margin-bottom: 5%;
-    font-size: 18px;
-    border: none;
-    border-bottom: 2px solid black;
-    border-radius: 5px;
-    padding-left: 4%;
+
+.informations form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(19, 19, 89);
 }
-.informations form textarea {
-    width: 500px;
-    height: 100px;
-    font-size: 18px;
-    border: none;
-    border-bottom: 2px solid black;
-    border-radius: 5px;
-    padding-left: 4%;
+
+.informations form input, .informations form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
+
+.informations form input:focus, .informations form textarea:focus {
+    border-color: rgb(0, 59, 117);
+    outline: none;
+}
+
 .form button {
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 45px;
     align-self: center;
-    margin: 3% 0 0 45%;
     background-color: rgb(19, 19, 89);
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form button:hover {
+    background-color: rgb(0, 59, 117);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 5% auto;
+    }
+    
+    .informations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informations .findus, .informations form {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
